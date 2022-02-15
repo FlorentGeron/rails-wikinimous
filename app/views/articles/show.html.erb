@@ -1,0 +1,24 @@
+<div class="container">
+<div class= "card">
+<h2><%= @article[:title] %></h2>
+<p><%= @article[:content] %></p>
+</div>
+<div>
+<ul class= "inline-list">
+  <li> <%= link_to articles_path do%>
+      <div class="button_link">Back to List</div>
+    <%end%>
+  </li>
+  <li> <%= link_to edit_article_path(@article) do%>
+      <div class="button_link">Make it Better</div>
+    <%end%>
+  </li>
+  <li><%= link_to article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" }  do%>
+      <div class="button_link">Delete</div>
+    <% end %>
+  </li>
+</ul>
+</div>
+</div>

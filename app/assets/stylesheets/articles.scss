@@ -1,0 +1,74 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.body {
+  background-color: rgb(240,249,255);
+}
+
+h1 {
+  color: rgba(12,74,110, 1);
+  text-align: center;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(12,74,110, 1);
+}
+
+a:hover{
+color: rgba(12,74,110, 0.6);
+}
+
+.button_link {
+  border-radius: 10px;
+  background-color: rgba(12,74,110, 1);
+  color: white;
+  padding: 10px;
+  width: 10vw;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  display:inline;
+}
+
+.button_link:hover {
+  background-color: rgba(12,74,110, 0.6);
+}
+
+.container {
+  text-align: left;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2)
+}
+
+.card>p {
+  color:black;
+}
+
+.card:hover>p{
+color: rgba(0,0,0,0.3)
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.inline-list{
+   li {
+     display:inline;
+   }
+}

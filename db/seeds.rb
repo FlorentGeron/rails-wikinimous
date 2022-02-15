@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+10.times do
+  puts 'generating one article'
+  article = Article.new(title: Faker::Movies::Lebowski.character, content: Faker::Movies::BackToTheFuture.quote)
+  article.save
+end
+puts 'done seeding'

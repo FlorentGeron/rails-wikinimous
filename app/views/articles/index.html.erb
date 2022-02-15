@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome to your wiki</h1>
+  <ul>
+     <%@articles.each do |article|%>
+      <li>
+          <%=link_to article_path(article) do%>
+            <div class="card">
+              <h2><%=article.title%></h2>
+              <p><%=article.content%></p>
+            </div>
+          <%end%>
+      </li>
+    <%end%>
+  </ul>
+  <%= link_to new_article_path do %>
+    <div class="button_link">Write something original</div>
+  <% end %>
+</div>
